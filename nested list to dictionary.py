@@ -1,9 +1,9 @@
 def list_to_dict(list1, frequency=None):
     if frequency is None:
-        frequency = {}
+         frequency = {}
     for element in lst:
         if isinstance(element, list):
-            nested_list_to_dict(element, freq)
+            list_to_dict(element, freq)
         else:
             frequency[element] = frequency.get(element, 0) + 1
     return frequency
