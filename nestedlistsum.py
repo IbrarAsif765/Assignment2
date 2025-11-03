@@ -1,0 +1,10 @@
+def list_sum(list1):
+    total = 0
+    for element in lst:
+        if isinstance(element, list):
+            total += nested_list_sum(element)
+        else:
+            total += element
+    return total
+list1 = [1, [2, [3, 4], 5], 6]
+print(list_sum(list1))
