@@ -1,8 +1,8 @@
 def list_sum(list1):
     total = 0
-    for element in lst:
+    for element in list1:
         if isinstance(element, list):
-            total += nested_list_sum(element)
+            total += list_sum(element)
         else:
             total += element
     return total
